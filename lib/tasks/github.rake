@@ -10,6 +10,12 @@ namespace :github do
       form["login"]  = "user@example.com"
       form["password"] = "password"
     end.submit
+
+    if my_page.link_with(href: "/username")
+      puts "vous êtes connecté"
+    else
+      puts "Vous n'avez pas réussi à vous connecter"
+    end
   end
 
   desc 'Download file'
